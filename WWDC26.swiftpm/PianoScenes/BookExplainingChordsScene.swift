@@ -40,9 +40,9 @@ struct BookExplainingChordsScene: View {
                         
                         ChatBox(
                             lines: [
-                                "Perfect! Now let’s learn about chords!",
-                                "When we play two or more notes, we have a chord!",
-                                "Let’s play the chords of grandma’s song"
+                                String(localized: "dialogue.bookExplainingChords.line1"),
+                                String(localized: "dialogue.bookExplainingChords.line2"),
+                                String(localized: "dialogue.bookExplainingChords.line3")
                             ],
                             character: .none,
                             boxSize: geometry.size.height * (2/9),
@@ -50,7 +50,7 @@ struct BookExplainingChordsScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                 }

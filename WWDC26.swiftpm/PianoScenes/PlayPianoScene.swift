@@ -39,7 +39,7 @@ struct PlayPianoScene: View {
                         .padding(0)
                         ChatBox(
                             lines: [
-                                "Let's try playing something!"
+                                String(localized: "dialogue.playPiano")
                             ],
                             character: .boy,
                             boxSize: geometry.size.height * (2/9),
@@ -49,7 +49,7 @@ struct PlayPianoScene: View {
                         .padding(0)
                         
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                         
                     }
                     .frame(maxWidth: .infinity)
@@ -63,7 +63,7 @@ struct PlayPianoScene: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 40)
-                                .accessibilityLabel("Voltar")
+                                .accessibilityLabel(Text("accessibility.back", bundle: .main))
                                 .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
 
                         }

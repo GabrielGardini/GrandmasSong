@@ -24,7 +24,7 @@ struct CheerUpScene: View {
                         Spacer()
                         ChatBox(
                             lines: [
-                                "Today I wanted to cheer her up"
+                                String(localized: "dialogue.cheerUp")
                             ],
                             character: .boy,
                             boxSize: geometry.size.height * (2/9),
@@ -32,7 +32,7 @@ struct CheerUpScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                 }

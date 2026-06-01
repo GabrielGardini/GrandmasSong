@@ -24,8 +24,8 @@ struct PianoFocusedScene: View {
                         Spacer()          
                         ChatBox(
                             lines: [
-                                "Maybe by playing a song she likes",
-                                "I’ll try to play the piano"
+                                String(localized: "dialogue.pianoFocused.line1"),
+                                String(localized: "dialogue.pianoFocused.line2")
                             ],
                             character: .boy,
                             boxSize: geometry.size.height * (2/9),
@@ -33,7 +33,7 @@ struct PianoFocusedScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
 

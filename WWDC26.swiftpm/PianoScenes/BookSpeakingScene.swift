@@ -39,10 +39,10 @@ struct BookSpeakingScene: View {
                         
                         ChatBox(
                             lines: [
-                                "Wow, it’s been a while since grandma read me for the last time ",
-                                "It can be tough to forget things, but I know what she would love to hear",
-                                "Old songs live in a special place that grandma can still remember.",
-                                "I will help you play her favorite song to cheer her up!"
+                                String(localized: "dialogue.bookSpeaking.line1"),
+                                String(localized: "dialogue.bookSpeaking.line2"),
+                                String(localized: "dialogue.bookSpeaking.line3"),
+                                String(localized: "dialogue.bookSpeaking.line4")
                                 
                             ],
                             character: .none,
@@ -51,7 +51,7 @@ struct BookSpeakingScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                 }

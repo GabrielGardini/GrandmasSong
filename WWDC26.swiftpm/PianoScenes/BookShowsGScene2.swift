@@ -59,7 +59,7 @@ struct BookShowsGScene2: View {
                         
                         ChatBox(
                             lines: [
-                                "Now try to play the three notes at the same time!"
+                                String(localized: "dialogue.bookShowsG.line2")
                                 
                             ],
                             character: .none,
@@ -68,7 +68,7 @@ struct BookShowsGScene2: View {
                             nextSceneBlocked: true
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                     .onAppear {

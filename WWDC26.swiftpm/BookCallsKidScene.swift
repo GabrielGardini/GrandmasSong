@@ -28,7 +28,7 @@ struct BookCallsKidScene: View {
                         Spacer()                                       
                         ChatBox(
                             lines: [
-                                "Hey kid, over here!"
+                                String(localized: "dialogue.bookCallsKid")
                                 
                             ],
                             character: .book,
@@ -37,7 +37,7 @@ struct BookCallsKidScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                 }

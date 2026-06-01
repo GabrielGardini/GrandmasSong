@@ -17,7 +17,7 @@ struct IntroductionScene: View {
                         Spacer()          
                         ChatBox(
                             lines: [
-                                "Hello, my name is Gabriel and this is my grandma"
+                                String(localized: "dialogue.introduction")
                             ],
                             character: .boy,
                             boxSize: geometry.size.height * (2/9),
@@ -25,7 +25,7 @@ struct IntroductionScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                 }

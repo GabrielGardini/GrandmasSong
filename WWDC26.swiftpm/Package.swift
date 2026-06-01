@@ -9,6 +9,7 @@ import AppleProductTypes
 
 let package = Package(
     name: "Grandma's Song",
+    defaultLocalization: "en",
     platforms: [
         .iOS("18.0")
     ],
@@ -23,7 +24,8 @@ let package = Package(
             appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.yellow),
             supportedDeviceFamilies: [
-                .pad
+                .pad,
+                .phone
             ],
             supportedInterfaceOrientations: [
                 .landscapeRight,

@@ -45,7 +45,7 @@ struct BookShowsAmScene1: View {
                         
                         ChatBox(
                             lines: [
-                                "Amazing, you're getting good at this! The third chord will be Am, it is formed by the notes a, c and e, play them!"
+                                String(localized: "dialogue.bookShowsAm.line1")
                                 
                             ],
                             character: .none,
@@ -54,7 +54,7 @@ struct BookShowsAmScene1: View {
                             nextSceneBlocked: true
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                     .onAppear {

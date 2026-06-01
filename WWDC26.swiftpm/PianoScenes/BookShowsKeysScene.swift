@@ -56,7 +56,7 @@ struct BookShowsKeysScene: View {
                         
                         ChatBox(
                             lines: [
-                                "Let's play each one of them!"
+                                String(localized: "dialogue.bookShowsKeys")
                                 
                             ],
                             character: .none,
@@ -65,7 +65,7 @@ struct BookShowsKeysScene: View {
                             nextSceneBlocked: true
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                     .onChange(of: pressedKeys) { newValue in

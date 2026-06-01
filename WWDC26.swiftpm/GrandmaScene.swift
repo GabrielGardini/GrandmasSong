@@ -30,8 +30,8 @@ struct GrandmaScene: View {
                         Spacer()
                         ChatBox(
                             lines: [
-                                "She really loves music and used to dance to her favorite songs when she was young",
-                                "Her old memories are still very vivid"
+                                String(localized: "dialogue.grandma.line1"),
+                                String(localized: "dialogue.grandma.line2")
                             ],
                             character: .boy,
                             boxSize: geometry.size.height * (2/9),
@@ -39,7 +39,7 @@ struct GrandmaScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                 }

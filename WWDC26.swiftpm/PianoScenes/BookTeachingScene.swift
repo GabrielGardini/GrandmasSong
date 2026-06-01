@@ -39,8 +39,8 @@ struct BookTeachingScene: View {
                         
                         ChatBox(
                             lines: [
-                                "First, we need to understand what these keys are ",
-                                "Each one represents the sound of a musical note"
+                                String(localized: "dialogue.bookTeaching.line1"),
+                                String(localized: "dialogue.bookTeaching.line2")
                             ],
                             character: .none,
                             boxSize: geometry.size.height * (2/9),
@@ -48,7 +48,7 @@ struct BookTeachingScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                 }

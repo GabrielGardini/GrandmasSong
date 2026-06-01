@@ -51,18 +51,36 @@ struct StartView: View {
                     .ignoresSafeArea(edges: .all)
                 GeometryReader { geometry in
                     VStack(alignment: .center) {
-                        Spacer()
-                        
-                        VStack(spacing: 16) {
-                            NavigationLink(destination: { IntroductionScene() }) { Image("PlayButton").resizable().scaledToFit().frame(maxWidth: 400).accessibilityLabel("Play") }
-                            NavigationLink(destination: { AboutMe() }) { Image("AboutButton").resizable().scaledToFit().frame(maxWidth: 400).accessibilityLabel("About me") }
+                        // On iPad push buttons into the lower half of the screen.
+                        // On iPhone a free Spacer keeps the single button centred.
+                        if DeviceLayout.isPad {
+                            Spacer()
+                                .frame(minHeight: geometry.size.height * 0.62)
+                        } else {
+                            Spacer()
+                        }
+
+                        VStack(spacing: DeviceLayout.isPad ? 0 : 16) {
+                            NavigationLink(destination: { IntroductionScene() }) {
+                                Image("PlayButton").resizable().scaledToFit()
+                                    .frame(maxWidth: DeviceLayout.buttonMaxWidth(for: geometry),
+                                           maxHeight: DeviceLayout.buttonMaxHeight(for: geometry))
+                                    .accessibilityLabel(Text("accessibility.play", bundle: .main))
+                            }
+                            if DeviceLayout.isPad {
+                                NavigationLink(destination: { AboutMe() }) {
+                                    Image("AboutButton").resizable().scaledToFit()
+                                        .frame(maxWidth: DeviceLayout.buttonMaxWidth(for: geometry),
+                                               maxHeight: DeviceLayout.buttonMaxHeight(for: geometry))
+                                        .accessibilityLabel(Text("accessibility.aboutMe", bundle: .main))
+                                }
+                            }
                         }
                         .padding(.horizontal)
                         .frame(maxWidth: .infinity)
-                        
-                        
+
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                     .onAppear {

@@ -51,17 +51,27 @@ struct GabrielThanksScene: View {
                         Spacer()
                         
                         VStack(spacing: 16) {
-                            
-                            NavigationLink(destination: { PlayPianoScene() }) { Image("KeepPlayingButton").resizable().scaledToFit().frame(maxWidth: 400).accessibilityLabel("Keep Playing") }
-                            NavigationLink(destination: { StartView() }) { Image("HomeButton").resizable().scaledToFit().frame(maxWidth: 400).accessibilityLabel("Home") }
-                            
+
+                            NavigationLink(destination: { PlayPianoScene() }) {
+                                Image("KeepPlayingButton").resizable().scaledToFit()
+                                    .frame(maxWidth: DeviceLayout.buttonMaxWidth(for: geometry),
+                                           maxHeight: DeviceLayout.buttonMaxHeight(for: geometry))
+                                    .accessibilityLabel(Text("accessibility.keepPlaying", bundle: .main))
+                            }
+                            NavigationLink(destination: { StartView() }) {
+                                Image("HomeButton").resizable().scaledToFit()
+                                    .frame(maxWidth: DeviceLayout.buttonMaxWidth(for: geometry),
+                                           maxHeight: DeviceLayout.buttonMaxHeight(for: geometry))
+                                    .accessibilityLabel(Text("accessibility.home", bundle: .main))
+                            }
+
                         }
                         .padding(.horizontal)
                         .frame(maxWidth: .infinity)
                                        
                         ChatBox(
                             lines: [
-                                "Thank you so much! Now I know how to make grandma happy whenever she feels sad!"
+                                String(localized: "dialogue.gabrielThanks")
                             ],
                             character: .boy,
                             boxSize: geometry.size.height * (2/9),
@@ -69,7 +79,7 @@ struct GabrielThanksScene: View {
                             nextSceneBlocked: true
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
 

@@ -58,7 +58,7 @@ struct BookPlaysDmScene1: View {
                         
                         ChatBox(
                             lines: [
-                                "Now let's play grandma's favorite song!"
+                                String(localized: "dialogue.bookPlays")
                                 
                             ],
                             character: .none,
@@ -67,7 +67,7 @@ struct BookPlaysDmScene1: View {
                             nextSceneBlocked: true
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                     .onAppear {

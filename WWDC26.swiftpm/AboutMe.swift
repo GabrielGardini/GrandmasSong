@@ -14,18 +14,24 @@ struct AboutMe: View {
                         .scaledToFill()
                         .ignoresSafeArea(edges: .all)
                     
+                    // Card size adapts to device: on iPhone uses the
+                    // shorter screen dimension so the card never overflows
+                    // in landscape; on iPad keeps the original 400 pt size.
+                    let cardSize = DeviceLayout.aboutCardSize(for: geometry)
+                    let cardFontSize: CGFloat = DeviceLayout.isPhone ? 22 : 30
+
                     Rectangle()
                         .fill(Color.white.opacity(0.1))
-                        .frame(width: 400, height: 400)
+                        .frame(width: cardSize, height: cardSize)
                         .overlay(
                             VStack(spacing: 12) {
-                                Text("About Me")
-                                    .font(.custom("VT323-Regular", size: 30))
+                                Text("aboutme.title", bundle: .main)
+                                    .font(.custom("VT323-Regular", size: cardFontSize))
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.black)
 
-                                Text("Hello, I’m Gabriel! I’m an iOS developer passionate about music and my grandma. In Grandma’s Song, you’ll learn a bit more about the piano and how music can help in cases of dementia and Alzheimer’s.")
-                                    .font(.custom("VT323-Regular", size: 30))
+                                Text("aboutme.description", bundle: .main)
+                                    .font(.custom("VT323-Regular", size: cardFontSize))
                                     .multilineTextAlignment(.center)
                                     .foregroundStyle(.black)
                                     .padding(.horizontal, 16)
@@ -35,7 +41,12 @@ struct AboutMe: View {
                         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                         .shadow(radius: 8)
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                        .offset(x: geometry.size.width / 4.5, y: -geometry.size.width / 13)
+                        // On iPhone the card stays centred; on iPad it shifts to
+                        // align with the background character art.
+                        .offset(
+                            x: DeviceLayout.aboutCardOffsetX(for: geometry),
+                            y: DeviceLayout.aboutCardOffsetY(for: geometry)
+                        )
                 }
             }
             .navigationBarBackButtonHidden(true)
@@ -47,7 +58,7 @@ struct AboutMe: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 40)
-                            .accessibilityLabel("Voltar")
+                            .accessibilityLabel(Text("accessibility.back", bundle: .main))
                             .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
 
                     }

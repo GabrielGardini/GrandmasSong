@@ -1,0 +1,104 @@
+/* ─────────────────────────────────────────────────────────────────
+   Grandma's Song – English (en)
+   ───────────────────────────────────────────────────────────────── */
+
+// MARK: - Accessibility labels
+
+"accessibility.back"              = "Back";
+"accessibility.next"              = "Next";
+"accessibility.play"              = "Play";
+"accessibility.aboutMe"           = "About me";
+"accessibility.home"              = "Home";
+"accessibility.keepPlaying"       = "Keep Playing";
+"accessibility.pianoKey.idle"     = "Piano key idle";
+"accessibility.pianoKey.pressed"  = "Piano key pressed";
+"accessibility.pianoKey.disabled" = "Piano key disabled";
+
+// MARK: - About Me screen
+
+"aboutme.title"       = "About Me";
+"aboutme.description" = "Hello, I'm Gabriel! I'm an iOS developer passionate about music and my grandma. In Grandma's Song, you'll learn a bit more about the piano and how music can help in cases of dementia and Alzheimer's.";
+
+// MARK: - Dialogue: Introduction
+
+"dialogue.introduction" = "Hello, my name is Gabriel and this is my grandma";
+
+// MARK: - Dialogue: Grandma scene
+
+"dialogue.grandma.line1" = "She really loves music and used to dance to her favorite songs when she was young";
+"dialogue.grandma.line2" = "Her old memories are still very vivid";
+
+// MARK: - Dialogue: Sad Grandma
+
+"dialogue.sadGrandma" = "But nowadays, grandma forgets new things, and that makes her sad";
+
+// MARK: - Dialogue: Cheer Up
+
+"dialogue.cheerUp" = "Today I wanted to cheer her up";
+
+// MARK: - Dialogue: Piano Focused
+
+"dialogue.pianoFocused.line1" = "Maybe by playing a song she likes";
+"dialogue.pianoFocused.line2" = "I'll try to play the piano";
+
+// MARK: - Dialogue: Book Calls Kid
+
+"dialogue.bookCallsKid" = "Hey kid, over here!";
+
+// MARK: - Dialogue: Book Speaking
+
+"dialogue.bookSpeaking.line1" = "Wow, it's been a while since grandma read me for the last time ";
+"dialogue.bookSpeaking.line2" = "It can be tough to forget things, but I know what she would love to hear";
+"dialogue.bookSpeaking.line3" = "Old songs live in a special place that grandma can still remember.";
+"dialogue.bookSpeaking.line4" = "I will help you play her favorite song to cheer her up!";
+
+// MARK: - Dialogue: Book Teaching
+
+"dialogue.bookTeaching.line1" = "First, we need to understand what these keys are ";
+"dialogue.bookTeaching.line2" = "Each one represents the sound of a musical note";
+
+// MARK: - Dialogue: First Piano Playing
+
+"dialogue.firstPianoPlaying" = "Let's try playing some keys! Could you help me play them?";
+
+// MARK: - Dialogue: Book Shows Keys
+
+"dialogue.bookShowsKeys" = "Let's play each one of them!";
+
+// MARK: - Dialogue: Book Explaining Chords
+
+"dialogue.bookExplainingChords.line1" = "Perfect! Now let's learn about chords!";
+"dialogue.bookExplainingChords.line2" = "When we play two or more notes, we have a chord!";
+"dialogue.bookExplainingChords.line3" = "Let's play the chords of grandma's song";
+
+// MARK: - Dialogue: Book Shows Dm
+
+"dialogue.bookShowsDm.line1" = "The first chord will be Dm, it is formed by the notes d, f, and a, play them!";
+"dialogue.bookShowsDm.line2" = "Now try to play the three notes at the same time!";
+
+// MARK: - Dialogue: Book Shows F
+
+"dialogue.bookShowsF.line1" = "Perfect! The second chord will be F, it is formed by the notes f, a, and c, play them!";
+"dialogue.bookShowsF.line2" = "Now try to play the three notes at the same time!";
+
+// MARK: - Dialogue: Book Shows Am
+
+"dialogue.bookShowsAm.line1" = "Amazing, you're getting good at this! The third chord will be Am, it is formed by the notes a, c and e, play them!";
+"dialogue.bookShowsAm.line2" = "Now try to play the three notes at the same time!";
+
+// MARK: - Dialogue: Book Shows G
+
+"dialogue.bookShowsG.line1" = "Wonderful! The last chord will be G, it is formed by the notes g, b and d, play them!";
+"dialogue.bookShowsG.line2" = "Now try to play the three notes at the same time!";
+
+// MARK: - Dialogue: Book Plays (all chord practice scenes)
+
+"dialogue.bookPlays" = "Now let's play grandma's favorite song!";
+
+// MARK: - Dialogue: Play Piano scene
+
+"dialogue.playPiano" = "Let's try playing something!";
+
+// MARK: - Dialogue: End / Gabriel Thanks
+
+"dialogue.gabrielThanks" = "Thank you so much! Now I know how to make grandma happy whenever she feels sad!";

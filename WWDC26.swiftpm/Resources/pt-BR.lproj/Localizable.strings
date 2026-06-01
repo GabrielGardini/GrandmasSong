@@ -1,0 +1,104 @@
+/* ─────────────────────────────────────────────────────────────────
+   Grandma's Song – Português do Brasil (pt-BR)
+   ───────────────────────────────────────────────────────────────── */
+
+// MARK: - Rótulos de acessibilidade
+
+"accessibility.back"              = "Voltar";
+"accessibility.next"              = "Próximo";
+"accessibility.play"              = "Jogar";
+"accessibility.aboutMe"           = "Sobre mim";
+"accessibility.home"              = "Início";
+"accessibility.keepPlaying"       = "Continuar tocando";
+"accessibility.pianoKey.idle"     = "Tecla do piano inativa";
+"accessibility.pianoKey.pressed"  = "Tecla do piano pressionada";
+"accessibility.pianoKey.disabled" = "Tecla do piano desativada";
+
+// MARK: - Tela Sobre Mim
+
+"aboutme.title"       = "Sobre Mim";
+"aboutme.description" = "Olá, eu sou o Gabriel! Sou um desenvolvedor iOS apaixonado por música e pela minha vovó. Em A Música da Vovó, você vai aprender um pouco mais sobre o piano e como a música pode ajudar em casos de demência e Alzheimer.";
+
+// MARK: - Diálogo: Introdução
+
+"dialogue.introduction" = "Olá, meu nome é Gabriel e esta é a minha vovó";
+
+// MARK: - Diálogo: Cena da Vovó
+
+"dialogue.grandma.line1" = "Ela adora música e costumava dançar às suas músicas favoritas quando era jovem";
+"dialogue.grandma.line2" = "Suas memórias antigas ainda são muito vívidas";
+
+// MARK: - Diálogo: Vovó triste
+
+"dialogue.sadGrandma" = "Mas hoje em dia, a vovó esquece coisas novas, e isso a deixa triste";
+
+// MARK: - Diálogo: Animar a vovó
+
+"dialogue.cheerUp" = "Hoje eu queria animá-la";
+
+// MARK: - Diálogo: Foco no piano
+
+"dialogue.pianoFocused.line1" = "Talvez tocando uma música que ela goste";
+"dialogue.pianoFocused.line2" = "Vou tentar tocar o piano";
+
+// MARK: - Diálogo: O livro chama o garoto
+
+"dialogue.bookCallsKid" = "Ei, garoto, aqui!";
+
+// MARK: - Diálogo: O livro fala
+
+"dialogue.bookSpeaking.line1" = "Uau, faz tempo que a vovó não me lê pela última vez ";
+"dialogue.bookSpeaking.line2" = "Pode ser difícil esquecer as coisas, mas eu sei o que ela adoraria ouvir";
+"dialogue.bookSpeaking.line3" = "Músicas antigas vivem em um lugar especial que a vovó ainda consegue lembrar.";
+"dialogue.bookSpeaking.line4" = "Vou te ajudar a tocar a música favorita dela para animá-la!";
+
+// MARK: - Diálogo: O livro ensina
+
+"dialogue.bookTeaching.line1" = "Primeiro, precisamos entender o que são essas teclas ";
+"dialogue.bookTeaching.line2" = "Cada uma representa o som de uma nota musical";
+
+// MARK: - Diálogo: Primeira vez tocando
+
+"dialogue.firstPianoPlaying" = "Vamos tentar tocar algumas teclas! Você pode me ajudar a tocá-las?";
+
+// MARK: - Diálogo: O livro mostra as teclas
+
+"dialogue.bookShowsKeys" = "Vamos tocar cada uma delas!";
+
+// MARK: - Diálogo: O livro explica os acordes
+
+"dialogue.bookExplainingChords.line1" = "Perfeito! Agora vamos aprender sobre acordes!";
+"dialogue.bookExplainingChords.line2" = "Quando tocamos duas ou mais notas, temos um acorde!";
+"dialogue.bookExplainingChords.line3" = "Vamos tocar os acordes da música da vovó";
+
+// MARK: - Diálogo: O livro mostra Dm
+
+"dialogue.bookShowsDm.line1" = "O primeiro acorde será Dm, formado pelas notas ré, fá e lá — toque-as!";
+"dialogue.bookShowsDm.line2" = "Agora tente tocar as três notas ao mesmo tempo!";
+
+// MARK: - Diálogo: O livro mostra F
+
+"dialogue.bookShowsF.line1" = "Perfeito! O segundo acorde será Fá, formado pelas notas fá, lá e dó — toque-as!";
+"dialogue.bookShowsF.line2" = "Agora tente tocar as três notas ao mesmo tempo!";
+
+// MARK: - Diálogo: O livro mostra Am
+
+"dialogue.bookShowsAm.line1" = "Incrível, você está ficando bom nisso! O terceiro acorde será Lám, formado pelas notas lá, dó e mi — toque-as!";
+"dialogue.bookShowsAm.line2" = "Agora tente tocar as três notas ao mesmo tempo!";
+
+// MARK: - Diálogo: O livro mostra G
+
+"dialogue.bookShowsG.line1" = "Maravilhoso! O último acorde será Sol, formado pelas notas sol, si e ré — toque-as!";
+"dialogue.bookShowsG.line2" = "Agora tente tocar as três notas ao mesmo tempo!";
+
+// MARK: - Diálogo: O livro toca (todas as cenas de prática de acordes)
+
+"dialogue.bookPlays" = "Agora vamos tocar a música favorita da vovó!";
+
+// MARK: - Diálogo: Cena de tocar piano livre
+
+"dialogue.playPiano" = "Vamos tentar tocar alguma coisa!";
+
+// MARK: - Diálogo: Final / Gabriel agradece
+
+"dialogue.gabrielThanks" = "Muito obrigado! Agora sei como deixar a vovó feliz sempre que ela estiver triste!";

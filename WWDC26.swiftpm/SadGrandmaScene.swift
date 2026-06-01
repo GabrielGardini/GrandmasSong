@@ -24,7 +24,7 @@ struct SadGrandmaScene: View {
                         Spacer()          
                         ChatBox(
                             lines: [
-                                "But nowadays, grandma forgets new things, and that makes her sad"
+                                String(localized: "dialogue.sadGrandma")
                             ],
                             character: .boy,
                             boxSize: geometry.size.height * (2/9),
@@ -32,7 +32,7 @@ struct SadGrandmaScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                 }

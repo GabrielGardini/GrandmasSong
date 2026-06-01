@@ -24,9 +24,9 @@ struct EndScene: View {
                         Spacer()
                         
                         VStack(spacing: 16) {
-                            NavigationLink("Home", destination: { StartView() })
+                            NavigationLink(String(localized: "accessibility.home"), destination: { StartView() })
                                 .buttonStyle(.borderedProminent)
-                            NavigationLink("Keep Playing", destination: { PlayPianoScene() })
+                            NavigationLink(String(localized: "accessibility.keepPlaying"), destination: { PlayPianoScene() })
                                 .buttonStyle(.borderedProminent)
                         }
                         .padding(.horizontal)
@@ -34,7 +34,7 @@ struct EndScene: View {
                                        
                         ChatBox(
                             lines: [
-                                "Thank you so much! Now I know how to make grandma happy whenever she feels sad!"
+                                String(localized: "dialogue.gabrielThanks")
                             ],
                             character: .boy,
                             boxSize: geometry.size.height * (2/9),
@@ -42,7 +42,7 @@ struct EndScene: View {
                             nextSceneBlocked: false
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                 }

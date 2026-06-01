@@ -114,9 +114,9 @@ public struct PianoKey: View {
 
     private var accessibilityLabel: Text {
         switch currentState {
-        case .idle: return Text("Piano key idle")
-        case .pressed: return Text("Piano key pressed")
-        case .disabled: return Text("Piano key disabled")
+        case .idle:     return Text("accessibility.pianoKey.idle",     bundle: .main)
+        case .pressed:  return Text("accessibility.pianoKey.pressed",  bundle: .main)
+        case .disabled: return Text("accessibility.pianoKey.disabled", bundle: .main)
         }
     }
 }

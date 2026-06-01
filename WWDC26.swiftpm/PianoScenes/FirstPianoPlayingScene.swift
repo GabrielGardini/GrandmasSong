@@ -30,7 +30,7 @@ struct FirstPianoPlayingScene: View {
                                        
                         ChatBox(
                             lines: [
-                                "Let's try playing some keys! Could you help me play them?"
+                                String(localized: "dialogue.firstPianoPlaying")
                             ],
                             character: .boy,
                             boxSize: geometry.size.height * (2/9),
@@ -38,7 +38,7 @@ struct FirstPianoPlayingScene: View {
                             nextSceneBlocked: true
                         )
                         Spacer()
-                            .frame(height: geometry.size.height / 30)
+                            .frame(height: DeviceLayout.sceneBottomPadding(for: geometry))
                     }
                     .frame(maxWidth: .infinity)
                     .onChange(of: pressedKeys) { newValue in
